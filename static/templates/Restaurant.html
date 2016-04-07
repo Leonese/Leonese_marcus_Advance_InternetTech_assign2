@@ -1,0 +1,18 @@
+<div class="col-md-2">
+<h4 name="mealtype"><%= restaurant_name %></h4>
+<div>
+	<p name="location"><%= restaurant_address %></p>
+</div>
+<label for="exampleInputName2">Requst Time</label>
+              <input type="text" class="form-control" id="Time" name="time" placeholder="00:00:00">
+<div>
+	<button type="button" class="btn btn-warning" data-id="<%= id %>" class="edit-restaurant">Edit</button>
+
+	<button type="button" class="btn btn-danger" data-id="<%= id %>" class="delete-restaurant">Delete</button>
+	
+	<button type="submit" class="btn btn-default">Make a Request</button>
+</div>
+</div>
+<div class="col-md-4">
+<img src="<%= restaurant_image %>"class="img-thumbnail restaurant-images">
+</div>

@@ -1,0 +1,77 @@
+Title  : Restaurant
+Description: Allows the users to add a restaurant
+Url: https://Restautrant.html
+Method: GET, POST
+Parameters:
+id (Integer, primary_key )
+  restaurant_name (String)
+  restaurant_address (String)
+  restaurant_image (String)
+  Successful call:
+Restaurant Returned
+Error Response:
+String “Restaurant not Found”
+  
+  Title: User
+Description: Allows the creation of a new user
+Url: CreateUser.html
+Methods: GET, POST
+Parameters:    
+    id = Integer, primary_key 
+    password_hash (String)
+    email (String)
+    picture(String)
+Successful Call:
+User information returned and displayed
+Error Response:
+None
+Additional functions:
+  hash_password(self, password): Used to encrypt the password
+verify_password(self, password): Used to very user at Login
+Title: Request:
+Description: Model used to create a request for a user.
+Url: https://Restaurant.html
+Parameters:
+    id(Integer, primary_key)
+    mealType (String)
+    location(String)
+    latitude(Float)
+    longitude(Float)
+    mealTime (String)
+    filled(Boolean)
+    user(User)
+    user_id (Integer, ForeignKey)
+
+Successful Call:
+None
+Error Response:
+String “Successful Request Made”
+
+Title: Proposal
+Description: Used to allow user to post a proposal to meet
+Url:https://Proposal.html
+Parameters:
+    id (Integer, primary_key)
+    user_proposed_to(Integer)
+    user_proposed_from(Integer)
+    request = relationship(Request)
+    request_id (Integer, ForeignKey)
+    filled(Boolean)
+
+Title:  MealDate
+Discription: Used to assign a meal date and time to a proposal
+    Url: https://Proposal.html
+Parameters:
+    id (Integer, primary_key)
+    user_1 (Integer)
+    user_2 (Integer)
+    restaurant_name (String)
+    restaurant_address (String)
+    restaurant_picture (String)
+    mealTime(String)
+
+Response Call:
+None
+Error Call:
+None 
+

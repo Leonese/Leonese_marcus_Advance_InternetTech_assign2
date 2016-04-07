@@ -1,0 +1,9 @@
+<div>
+	<p><%= password_hash %></p>
+	<p><%= picture %></p>
+</div>
+<div>
+	<button type="button" class="btn btn-warning" data-id="<%= id %>" class="edit-restaurant">Edit</button>
+
+	<button type="button" class="btn btn-danger" data-id="<%= id %>" class="delete-restaurant">Delete</button>
+</div>

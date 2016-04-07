@@ -1,0 +1,48 @@
+  <div class="col-md-12">
+    <div class="jumbotron">
+      <div class="container">
+        <h3>Welcome Back</h3>
+        <p><%= email %></p>   
+        <p><a class="navbar-brand" href="index.html">Back to home</a></p>     
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <form class="form-inline" id="edit-form">
+		   <img src="<%= picture %>"class="img-thumbnail restaurant-images">
+            <div class="form-group">
+              <label for="exampleInputName2">Email Address</label>
+			  <input type="text" class="form-control" id="EmailAddress" name="emailaddress" placeholder=<%= email %>>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName2">Password</label>
+			  <input type="text" class="form-control" id="Password" name="password" placeholder=<%= password %>>
+            </div>
+			<div class="form-group">
+              <label for="exampleInputName2">Add New Image</label>
+              <input type="File" class="form-control" id="Image" name="image" placeholder="Image">
+            </div>
+            <div class="form-group">
+            <div>
+				<button type="button" class="btn btn-warning" data-id="<%= id %>" class="edit-restaurant">Edit</button>
+
+				<button type="button" class="btn btn-danger" data-id="<%= id %>" class="delete-restaurant">Delete</button>
+			</div>
+          </form>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12" id = "content"></div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12" id="reviewBody">
+        
+      </div>      
+    </div>
+
+  </div>
